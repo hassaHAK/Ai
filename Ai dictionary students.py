@@ -74,7 +74,9 @@ student.append(student_8)
 student.append(student_9)
 student.append(student_10)
 id_no=int(input("Enter id:\n"))-1
-class_name=input("Enter Class:\n").lower()
+class_name=input("Enter Class (AI OR CNN):\n").lower()
+while((class_name!="ai")and(class_name!="cnn")):
+  class_name=input("Enter Class (AI OR CNN):\n").lower()
 exam=input("Enter Exam:\n").lower()
 if (class_name=="ai"):
     print(student[id_no].get("class1").get("marks").get(exam))
